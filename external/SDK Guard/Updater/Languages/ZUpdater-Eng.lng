@@ -1,0 +1,108 @@
+[Global]
+Title=English
+LangId=409
+
+[Forms]
+TfmMain-actFileExit-Caption=E&xit
+TfmMain-actSettings-Caption=Settings...
+TfmMain-actHelpAbout-Caption=&About...
+TfmMain-actViewRefresh-Caption=&Refresh
+TfmMain-actUpdateInfo-Caption=Update Info...
+TfmMain-actInstallStable-Caption=Install stable
+TfmMain-actInstallBeta-Caption=Install beta
+TfmMain-actUpgradeStable-Caption=Upgrade to stable
+TfmMain-actUpgradeBeta-Caption=Upgrade to beta
+
+TfmMain-lvUpdates-Columns<0>.Caption=Name
+TfmMain-lvUpdates-Columns<1>.Caption=Current
+TfmMain-lvUpdates-Columns<2>.Caption=New stable
+TfmMain-lvUpdates-Columns<3>.Caption=New beta
+TfmMain-lvUpdates-Columns<4>.Caption=Description
+
+TfmMain-miFile-Caption=&File
+TfmMain-miView-Caption=&View
+TfmMain-miOptions-Caption=&Options
+TfmMain-miHelp-Caption=&Help
+
+TfmAbout-Caption=About ZUpdater
+TfmAbout-labCopyright-Caption=Copyright (c) RF Enabled Ltd.
+TfmAbout-labSite-Caption=Internet: <a>www.ironlogic.ru</a>
+TfmAbout-labEMail-Caption=E-Mail: <a>marketing@ironlogic.ru</a>
+
+TfmSettings-Caption=Settings
+TfmSettings-labCheckURL-Caption=Link to check for updates:
+TfmSettings-chkSingleInst-Caption=Single instance
+TfmSettings-chkWriteLog-Caption=Write log program
+TfmSettings-chkCheckAtStartup-Caption=Check for updates at startup ZUpdater
+TfmSettings-grCheckAtWinStartup-Caption=Check for updates automatically when you start Windows
+TfmSettings-chkCAWSEnable-Caption=Enable
+TfmSettings-labCAWSPeriod-Caption=Check period (in days):
+TfmSettings-chkCAWSNoBeta-Caption=Ignore beta version
+TfmSettings-chkCAWSUpgrade-Caption=Automatically upgrade
+TfmSettings-labCAWSUpgradeIds-Caption=List of Id Software in a comma-separated list of allowed to upgrade (if the list is empty, then all are allowed):
+TfmSettings-btnOk-Caption=OK
+TfmSettings-btnCancel-Caption=Cancel
+
+TfmUpdateInfo-Caption=Update Information
+TfmUpdateInfo-tsMain-Caption=Main
+TfmUpdateInfo-tsChangeLog-Caption=Change log
+TfmUpdateInfo-labAppName-Caption=Name:
+TfmUpdateInfo-labAppId-Caption=Id:
+TfmUpdateInfo-grInstalledVersion-Caption=Installed version
+TfmUpdateInfo-labInstVer-Caption=Version:
+TfmUpdateInfo-labInstallDir-Caption=Folder:
+TfmUpdateInfo-grStableVersion-Caption=Available stable version
+TfmUpdateInfo-labStableVer-Caption=Version:
+TfmUpdateInfo-labStableLink-Caption=Link:
+TfmUpdateInfo-grBetaVersion-Caption=Available beta version
+TfmUpdateInfo-labBetaVer-Caption=Version:
+TfmUpdateInfo-labBetaLink-Caption=Link:
+TfmUpdateInfo-btnRefresh-Caption=Refresh
+TfmUpdateInfo-chkShowOnlyNew-Caption=Show only new
+TfmUpdateInfo-btnClose-Caption=Close
+
+TfmCmdStatus-Caption=Status command
+TfmCmdStatus-labDescription-Caption=Processing...
+TfmCmdStatus-lvLog-Columns<0>.Caption=Time
+TfmCmdStatus-lvLog-Columns<1>.Caption=Event
+TfmCmdStatus-btnCancel-Caption=Cancel
+
+[Strings]
+Str1=ZUpdater
+Str2=Really?
+Str3=Auto
+Str7=Update Information %s
+Str8=Loading...
+Str9=Successfully.
+Str11=Cannot create a folder "%s": %s
+Str12=Cannot rename the file "%s" to "%s": %s
+Str13=Cannot delete the file "%s": %s
+Str14=Executable file is missing ("%s").
+Str15=Cannot run the installer "%s": %s
+Str16=Installer "%s" returned error code %d.
+Str17=Checking updates...
+Str18=Link to check for updates is not specified.
+Str19=Found %d updates.
+Str20=No updates found.
+Str21=Download change logs...
+Str22=Download change log "%s"...
+Str23=Failed to download change log "%s".
+Str24=Download updates...
+Str25=Download update "%s" v%s...
+Str26=Failed to download update "%s".
+Str27=Installing updates...
+Str28=Installing update "%s" v%s (current version: %s)...
+Str29=Failed to install update "%s".
+Str30=To continue the upgrade ZUpdater need to close this program. Continue?
+Str31=Installed new updates: \r\n%s
+Str32=Installing the update for this program is postponed to the end of the queue.
+Str33=%s update version number does not match the actual %s.
+
+Str51=Warning
+Str52=Error
+Str53=Information
+Str54=Confirm
+Str55=&Yes
+Str56=&No
+Str57=OK
+Str58=Cancel

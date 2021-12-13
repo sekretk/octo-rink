@@ -1,0 +1,108 @@
+[Global]
+Title=Русский
+LangId=419
+
+[Forms]
+TfmMain-actFileExit-Caption=В&ыход
+TfmMain-actSettings-Caption=Настройки...
+TfmMain-actHelpAbout-Caption=О программе...
+TfmMain-actViewRefresh-Caption=&Обновить
+TfmMain-actUpdateInfo-Caption=Инфо об обновлении...
+TfmMain-actInstallStable-Caption=Установить стабильную
+TfmMain-actInstallBeta-Caption=Установить бета
+TfmMain-actUpgradeStable-Caption=Апгрейд до стабильной
+TfmMain-actUpgradeBeta-Caption=Апгрейд до бета
+
+TfmMain-lvUpdates-Columns<0>.Caption=Название
+TfmMain-lvUpdates-Columns<1>.Caption=Текущая
+TfmMain-lvUpdates-Columns<2>.Caption=Стабильная (новая)
+TfmMain-lvUpdates-Columns<3>.Caption=Бета (новая)
+TfmMain-lvUpdates-Columns<4>.Caption=Описание
+
+TfmMain-miFile-Caption=&Файл
+TfmMain-miView-Caption=&Вид
+TfmMain-miOptions-Caption=&Опции
+TfmMain-miHelp-Caption=&Справка
+
+TfmAbout-Caption=О программе ZUpdater
+TfmAbout-labCopyright-Caption=Права копирования (c) RF Enabled Ltd.
+TfmAbout-labSite-Caption=Интернет: <a>www.ironlogic.ru</a>
+TfmAbout-labEMail-Caption=Эл.почта: <a>marketing@ironlogic.ru</a>
+
+TfmSettings-Caption=Настройки
+TfmSettings-labCheckURL-Caption=Ccылка для проверки обновлений:
+TfmSettings-chkSingleInst-Caption=Одна копия программы
+TfmSettings-chkWriteLog-Caption=Писать лог программы
+TfmSettings-chkCheckAtStartup-Caption=Проверять обновления при старте ZUpdater
+TfmSettings-grCheckAtWinStartup-Caption=Автоматическая проверка обновлений при запуске Windows
+TfmSettings-chkCAWSEnable-Caption=Включено
+TfmSettings-labCAWSPeriod-Caption=Период проверки (в днях):
+TfmSettings-chkCAWSNoBeta-Caption=Игнорировать бета версии
+TfmSettings-chkCAWSUpgrade-Caption=Автоматически апгрейдить
+TfmSettings-labCAWSUpgradeIds-Caption=Список Id программ через запятую разрешенных для апгрейда (если список пустой, то разрешены все):
+TfmSettings-btnOk-Caption=OK
+TfmSettings-btnCancel-Caption=Отмена
+
+TfmUpdateInfo-Caption=Информация об обновлении
+TfmUpdateInfo-tsMain-Caption=Основное
+TfmUpdateInfo-tsChangeLog-Caption=Лог изменений
+TfmUpdateInfo-labAppName-Caption=Название:
+TfmUpdateInfo-labAppId-Caption=Id:
+TfmUpdateInfo-grInstalledVersion-Caption=Установленная версия
+TfmUpdateInfo-labInstVer-Caption=Версия:
+TfmUpdateInfo-labInstallDir-Caption=Папка:
+TfmUpdateInfo-grStableVersion-Caption=Доступная стабильная версия
+TfmUpdateInfo-labStableVer-Caption=Версия:
+TfmUpdateInfo-labStableLink-Caption=Ccылка:
+TfmUpdateInfo-grBetaVersion-Caption=Доступная бета версия
+TfmUpdateInfo-labBetaVer-Caption=Версия:
+TfmUpdateInfo-labBetaLink-Caption=Ccылка:
+TfmUpdateInfo-btnRefresh-Caption=Обновить
+TfmUpdateInfo-chkShowOnlyNew-Caption=Показывать только новое
+TfmUpdateInfo-btnClose-Caption=Закрыть
+
+TfmCmdStatus-Caption=Статус команды
+TfmCmdStatus-labDescription-Caption=В процессе...
+TfmCmdStatus-lvLog-Columns<0>.Caption=Время
+TfmCmdStatus-lvLog-Columns<1>.Caption=Событие
+TfmCmdStatus-btnCancel-Caption=Отмена
+
+[Strings]
+Str1=ZUpdater
+Str2=Уверены?
+Str3=Авто
+Str7=Информация об обновлении %s
+Str8=Загрузка...
+Str9=Успешно.
+Str11=Не удалось создать папку "%s": %s
+Str12=Не удалось переименовать файл "%s" в "%s": %s
+Str13=Не удалось удалить файл "%s": %s
+Str14=Исполняемый файл отсутствует ("%s").
+Str15=Не удалось запустить инсталлятор "%s": %s
+Str16=Инсталлятор "%s" вернул код ошибки %d.
+Str17=Проверка обновлений...
+Str18=Ссылка для проверки обновлений не задана.
+Str19=Найдено %d обновлений.
+Str20=Обновления не найдены.
+Str21=Загрузка логов изменений...
+Str22=Загрузка лога изменений "%s"...
+Str23=Не удалось загрузить лог изменений "%s".
+Str24=Загрузка обновлений...
+Str25=Загрузка обновления "%s" v%s...
+Str26=Не удалось скачать обновление "%s".
+Str27=Установка обновлений...
+Str28=Установка обновления "%s" v%s (текущая версия: %s)...
+Str29=Не удалось установить обновление "%s".
+Str30=Для продолжения обновления ZUpdater необходимо закрыть эту программу. Продолжить?
+Str31=Установлены новые обновления: \r\n%s
+Str32=Установка обновления для этой программы отложена в конец очереди.
+Str33=Номер версии обновления %s не соответствует действительной %s.
+
+Str51=Внимание
+Str52=Ошибка
+Str53=Информация
+Str54=Подтверждение
+Str55=&Да
+Str56=&Нет
+Str57=OK
+Str58=Отмена

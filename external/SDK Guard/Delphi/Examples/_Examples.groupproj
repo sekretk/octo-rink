@@ -1,0 +1,168 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<PropertyGroup>
+			<ProjectGuid>{70789C43-E1F6-41FF-941D-DB1DBB2E47BC}</ProjectGuid>
+		</PropertyGroup>
+		<ItemGroup>
+			<Projects Include="EnumSerialPorts.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="EnumConverters.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CvtLicense.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="FindControllers.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CtrClock.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CtrLockTimes.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CtrSchedule.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CtrKeys.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CtrUpdateKeys.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="CtrEvents.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="M2nElectroControl.dproj">
+				<Dependencies/>
+			</Projects>
+			<Projects Include="UpdateFirmware.dproj">
+				<Dependencies/>
+			</Projects>
+		</ItemGroup>
+		<ProjectExtensions>
+			<Borland.Personality>Default.Personality.12</Borland.Personality>
+			<Borland.ProjectType/>
+			<BorlandProject>
+				<Default.Personality/>
+			</BorlandProject>
+		</ProjectExtensions>
+		<Target Name="EnumSerialPorts">
+			<MSBuild Projects="EnumSerialPorts.dproj"/>
+		</Target>
+		<Target Name="EnumSerialPorts:Clean">
+			<MSBuild Projects="EnumSerialPorts.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="EnumSerialPorts:Make">
+			<MSBuild Projects="EnumSerialPorts.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="EnumConverters">
+			<MSBuild Projects="EnumConverters.dproj"/>
+		</Target>
+		<Target Name="EnumConverters:Clean">
+			<MSBuild Projects="EnumConverters.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="EnumConverters:Make">
+			<MSBuild Projects="EnumConverters.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="CvtLicense">
+			<MSBuild Projects="CvtLicense.dproj"/>
+		</Target>
+		<Target Name="CvtLicense:Clean">
+			<MSBuild Projects="CvtLicense.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CvtLicense:Make">
+			<MSBuild Projects="CvtLicense.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="FindControllers">
+			<MSBuild Projects="FindControllers.dproj"/>
+		</Target>
+		<Target Name="FindControllers:Clean">
+			<MSBuild Projects="FindControllers.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="FindControllers:Make">
+			<MSBuild Projects="FindControllers.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="CtrClock">
+			<MSBuild Projects="CtrClock.dproj"/>
+		</Target>
+		<Target Name="CtrClock:Clean">
+			<MSBuild Projects="CtrClock.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CtrClock:Make">
+			<MSBuild Projects="CtrClock.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="CtrLockTimes">
+			<MSBuild Projects="CtrLockTimes.dproj"/>
+		</Target>
+		<Target Name="CtrLockTimes:Clean">
+			<MSBuild Projects="CtrLockTimes.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CtrLockTimes:Make">
+			<MSBuild Projects="CtrLockTimes.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="CtrSchedule">
+			<MSBuild Projects="CtrSchedule.dproj"/>
+		</Target>
+		<Target Name="CtrSchedule:Clean">
+			<MSBuild Projects="CtrSchedule.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CtrSchedule:Make">
+			<MSBuild Projects="CtrSchedule.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="CtrKeys">
+			<MSBuild Projects="CtrKeys.dproj"/>
+		</Target>
+		<Target Name="CtrKeys:Clean">
+			<MSBuild Projects="CtrKeys.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CtrKeys:Make">
+			<MSBuild Projects="CtrKeys.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="CtrUpdateKeys">
+			<MSBuild Projects="CtrUpdateKeys.dproj"/>
+		</Target>
+		<Target Name="CtrUpdateKeys:Clean">
+			<MSBuild Projects="CtrUpdateKeys.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CtrUpdateKeys:Make">
+			<MSBuild Projects="CtrUpdateKeys.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="CtrEvents">
+			<MSBuild Projects="CtrEvents.dproj"/>
+		</Target>
+		<Target Name="CtrEvents:Clean">
+			<MSBuild Projects="CtrEvents.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="CtrEvents:Make">
+			<MSBuild Projects="CtrEvents.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="M2nElectroControl">
+			<MSBuild Projects="M2nElectroControl.dproj"/>
+		</Target>
+		<Target Name="M2nElectroControl:Clean">
+			<MSBuild Projects="M2nElectroControl.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="M2nElectroControl:Make">
+			<MSBuild Projects="M2nElectroControl.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="UpdateFirmware">
+			<MSBuild Projects="UpdateFirmware.dproj"/>
+		</Target>
+		<Target Name="UpdateFirmware:Clean">
+			<MSBuild Projects="UpdateFirmware.dproj" Targets="Clean"/>
+		</Target>
+		<Target Name="UpdateFirmware:Make">
+			<MSBuild Projects="UpdateFirmware.dproj" Targets="Make"/>
+		</Target>
+		<Target Name="Build">
+			<CallTarget Targets="EnumSerialPorts;EnumConverters;CvtLicense;FindControllers;CtrClock;CtrLockTimes;CtrSchedule;CtrKeys;CtrUpdateKeys;CtrEvents;M2nElectroControl;UpdateFirmware"/>
+		</Target>
+		<Target Name="Clean">
+			<CallTarget Targets="EnumSerialPorts:Clean;EnumConverters:Clean;CvtLicense:Clean;FindControllers:Clean;CtrClock:Clean;CtrLockTimes:Clean;CtrSchedule:Clean;CtrKeys:Clean;CtrUpdateKeys:Clean;CtrEvents:Clean;M2nElectroControl:Clean;UpdateFirmware:Clean"/>
+		</Target>
+		<Target Name="Make">
+			<CallTarget Targets="EnumSerialPorts:Make;EnumConverters:Make;CvtLicense:Make;FindControllers:Make;CtrClock:Make;CtrLockTimes:Make;CtrSchedule:Make;CtrKeys:Make;CtrUpdateKeys:Make;CtrEvents:Make;M2nElectroControl:Make;UpdateFirmware:Make"/>
+		</Target>
+		<Import Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')" Project="$(BDS)\Bin\CodeGear.Group.Targets"/>
+	</Project>

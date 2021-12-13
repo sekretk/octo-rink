@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9E5DA189-E239-4BC0-8503-116AB3870D88}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IvTx.Mi.DataBase</RootNamespace>
+    <AssemblyName>IvTx.Mi.DataBase</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Prism, Version=6.2.0.0, Culture=neutral, PublicKeyToken=91a96d2a154366d8, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Prism.Core.6.2.0\lib\net45\Prism.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DB\ApplicationLog.cs" />
+    <Compile Include="DB\CashBook.cs" />
+    <Compile Include="DB\Configuration.cs" />
+    <Compile Include="DB\Currencies.cs" />
+    <Compile Include="DB\CurrenciesHistory.cs" />
+    <Compile Include="DB\Documents.cs" />
+    <Compile Include="DB\ECRReceipts.cs" />
+    <Compile Include="DB\Goods.cs" />
+    <Compile Include="DB\GoodsGroups.cs" />
+    <Compile Include="DB\InternalLog.cs" />
+    <Compile Include="DB\Lots.cs" />
+    <Compile Include="DB\SecurityEvents.cs" />
+    <Compile Include="Enums\OperationsEnum.cs" />
+    <Compile Include="Enums\PaymentEnum.cs" />
+    <Compile Include="Enums\SecurityType.cs" />
+    <Compile Include="MIOperationFacade.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="DB\Network.cs" />
+    <Compile Include="DB\NextAcct.cs" />
+    <Compile Include="DB\Objects.cs" />
+    <Compile Include="DB\ObjectsGroups.cs" />
+    <Compile Include="DB\Operations.cs" />
+    <Compile Include="DB\OperationType.cs" />
+    <Compile Include="DB\Partners.cs" />
+    <Compile Include="DB\PartnersGroups.cs" />
+    <Compile Include="DB\Payments.cs" />
+    <Compile Include="DB\PaymentTypes.cs" />
+    <Compile Include="DB\PriceRules.cs" />
+    <Compile Include="DB\Program.cs" />
+    <Compile Include="PayItem.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DB\Registration.cs" />
+    <Compile Include="DB\Store.cs" />
+    <Compile Include="DB\System.cs" />
+    <Compile Include="DB\Transformations.cs" />
+    <Compile Include="DB\Users.cs" />
+    <Compile Include="DB\UsersGroups.cs" />
+    <Compile Include="DB\UsersSecurity.cs" />
+    <Compile Include="DB\VATGroups.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IvTx.Core.Abstract\IvTx.Core.Abstract.csproj">
+      <Project>{8AD02742-5B90-42DF-9A8B-3138C046CB4E}</Project>
+      <Name>IvTx.Core.Abstract</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\IvTx.Core\IvTx.Core.csproj">
+      <Project>{CF2374AC-DABB-48E9-9AE9-AA230B4DBA0F}</Project>
+      <Name>IvTx.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

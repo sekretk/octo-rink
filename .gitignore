@@ -1,0 +1,8 @@
+Bin/*
+Bin/
+obj/
+packages/
+deploy/Debug/
+deploy/Release/
+*.suo
+deploy/

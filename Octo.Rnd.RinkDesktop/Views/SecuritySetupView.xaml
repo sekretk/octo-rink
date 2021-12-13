@@ -1,0 +1,78 @@
+﻿<controls:OverlayWindow x:Class="Octo.Rnd.RinkDesktop.Views.SecuritySetupView"
+                        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                        xmlns:controls="http://schemas.extra.com/ui"
+                        xmlns:converters="clr-namespace:IvTx.Desktop.Converters;assembly=IvTx.Desktop"
+                        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                        xmlns:extentions="clr-namespace:IvTx.Desktop.Extentions;assembly=IvTx.Desktop"
+                        xmlns:helpers="clr-namespace:IvTx.Desktop.Helpers;assembly=IvTx.Desktop"
+                        xmlns:local="clr-namespace:Octo.Rnd.RinkDesktop.Views"
+                        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                        xmlns:params="http://schemas.codeplex.com/elysium/params"
+                        Title="AptivePartnerInfo"
+                        d:DesignHeight="300"
+                        d:DesignWidth="300"
+                         FocusManager.FocusedElement="{Binding ElementName=MainTextBox}"
+                        mc:Ignorable="d">
+    <!--extentions:InputForward.InputTextBox="{Binding ElementName=MainTextBox}"-->
+
+    <controls:OverlayWindow.Resources>
+        <Style BasedOn="{StaticResource {x:Type TextBox}}" TargetType="TextBox">
+            <Setter Property="FontSize" Value="19" />
+            <Setter Property="Height" Value="45" />
+        </Style>
+    </controls:OverlayWindow.Resources>
+
+    <ScrollViewer>
+        <StackPanel Margin="40 20">
+
+            <TextBlock Margin="{Binding RelativeSource={RelativeSource Self}, Path=(params:General.BoldPadding), Mode=OneWay}" Text="Необходимо поднести карту для:" />
+
+            <TextBox x:Name="MainTextBox"
+                     Margin="{Binding RelativeSource={RelativeSource Self},
+                                      Path=(params:General.BoldPadding),
+                                      Mode=OneWay}"
+                     helpers:FocusHelper.Return="True"
+                     AcceptsReturn="False"
+                     MaxLength="30"
+                     MaxLines="1"
+                     Text="{Binding Number,
+                                    Mode=TwoWay,
+                                    UpdateSourceTrigger=PropertyChanged}">
+                <TextBox.InputBindings>
+                    <KeyBinding Key="Enter" Command="{Binding Path=FindCommand}" />
+                </TextBox.InputBindings>
+            </TextBox>
+            
+            <Button Margin="{Binding RelativeSource={RelativeSource Self},
+                                     Path=(params:General.BoldPadding),
+                                     Mode=OneWay}"
+                    BorderBrush="Black"
+                    Command="{Binding FindCommand}"
+                    Content="Записать" />
+
+            <TextBlock Text="С покупкой доступны следующие виды прохода:" />
+
+            <ItemsControl FontSize="16" Margin="{Binding RelativeSource={RelativeSource Self}, Path=(params:General.BoldPadding), Mode=OneWay}" ItemsSource="{Binding ObservableEntranceItems, Mode=OneWay}">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal" Margin="4">
+                            <TextBlock Text="{Binding Name}" />
+                            <TextBlock Text="{Binding MinQtty, StringFormat='{}{0} минут'}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+
+            <TextBlock Margin="{Binding RelativeSource={RelativeSource Self}, Path=(params:General.BoldPadding), Mode=OneWay}" Text="{Binding Status}" />
+
+            <Button Margin="{Binding RelativeSource={RelativeSource Self},
+                                     Path=(params:General.BoldPadding),
+                                     Mode=OneWay}"
+                    HorizontalAlignment="Right"
+                    Command="{Binding CancelCommand}"
+                    Content="Отменить" />
+
+        </StackPanel>
+    </ScrollViewer>
+</controls:OverlayWindow>

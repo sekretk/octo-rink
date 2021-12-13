@@ -1,0 +1,4 @@
+todo: setting to save: selected group, previous bill?, 
+todo: initial async UI
+todo: population on group select async
+todo: dbModel for MI base

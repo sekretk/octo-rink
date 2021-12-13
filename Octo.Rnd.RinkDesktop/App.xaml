@@ -1,0 +1,18 @@
+﻿<ui:ElysiumApplication x:Class="Octo.Rnd.RinkDesktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Octo.Rnd.RinkDesktop"
+             xmlns:ui="http://schemas.extra.com/ui"
+             xmlns:Converters="clr-namespace:IvTx.Desktop.Converters;assembly=IvTx.Desktop"
+             xmlns:System="clr-namespace:System;assembly=mscorlib"
+             StartupUri="MainWindow.xaml">
+    <ui:ElysiumApplication.Resources>
+        <Converters:DictionaryConverter x:Key="bool2NegativeConverter">
+            <System:Boolean x:Key="False">True</System:Boolean>
+            <System:Boolean x:Key="True">False</System:Boolean>
+        </Converters:DictionaryConverter>
+        
+        <Converters:Enum2DescConverter x:Key="DescConverter" />
+        
+    </ui:ElysiumApplication.Resources>
+</ui:ElysiumApplication>

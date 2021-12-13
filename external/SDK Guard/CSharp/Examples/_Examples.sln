@@ -1,0 +1,86 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrClock", "CtrClock\CtrClock.csproj", "{30662EC9-7948-4808-BDE5-50AA028331FE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CvtLicense", "CvtLicense\CvtLicense.csproj", "{6CB338A5-E0AB-4538-9B67-C62495C85619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrLockTimes", "CtrLockTimes\CtrLockTimes.csproj", "{AA6445DB-0BAD-44FB-AAD6-C20EE51786E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrSchedule", "CtrSchedule\CtrSchedule.csproj", "{9DCD359D-3C6A-4E4D-A540-5895EDE0032B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrKeys", "CtrKeys\CtrKeys.csproj", "{B572C0D1-5E74-4AAF-A49E-E6DF39C681E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrEvents", "CtrEvents\CtrEvents.csproj", "{C04C8B21-5B25-4C91-BB06-3E656310CA81}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "M2nElectroControl", "M2nElectroControl\M2nElectroControl.csproj", "{800172C3-0BD0-4E32-A1B2-0EF113E54934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UpdateFirmware", "UpdateFirmware\UpdateFirmware.csproj", "{EEDADD43-81A7-48D6-9355-25A0C2C2F791}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumSerialPorts", "EnumSerialPorts\EnumSerialPorts.csproj", "{82C75239-1E57-4048-9D7D-CB4EEB5A791E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EnumConverters", "EnumConverters\EnumConverters.csproj", "{162F59BE-A7F0-4C7D-956C-F6786F7F160F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FindControllers", "FindControllers\FindControllers.csproj", "{5C800483-86BF-4002-9493-B0E6CCEB73D9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CtrUpdateKeys", "CtrUpdateKeys\CtrUpdateKeys.csproj", "{02AC9119-3724-465B-8060-E97A9E89C184}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{30662EC9-7948-4808-BDE5-50AA028331FE}.Debug|x86.ActiveCfg = Debug|x86
+		{30662EC9-7948-4808-BDE5-50AA028331FE}.Debug|x86.Build.0 = Debug|x86
+		{30662EC9-7948-4808-BDE5-50AA028331FE}.Release|x86.ActiveCfg = Release|x86
+		{30662EC9-7948-4808-BDE5-50AA028331FE}.Release|x86.Build.0 = Release|x86
+		{6CB338A5-E0AB-4538-9B67-C62495C85619}.Debug|x86.ActiveCfg = Debug|x86
+		{6CB338A5-E0AB-4538-9B67-C62495C85619}.Debug|x86.Build.0 = Debug|x86
+		{6CB338A5-E0AB-4538-9B67-C62495C85619}.Release|x86.ActiveCfg = Release|x86
+		{6CB338A5-E0AB-4538-9B67-C62495C85619}.Release|x86.Build.0 = Release|x86
+		{AA6445DB-0BAD-44FB-AAD6-C20EE51786E5}.Debug|x86.ActiveCfg = Debug|x86
+		{AA6445DB-0BAD-44FB-AAD6-C20EE51786E5}.Debug|x86.Build.0 = Debug|x86
+		{AA6445DB-0BAD-44FB-AAD6-C20EE51786E5}.Release|x86.ActiveCfg = Release|x86
+		{AA6445DB-0BAD-44FB-AAD6-C20EE51786E5}.Release|x86.Build.0 = Release|x86
+		{9DCD359D-3C6A-4E4D-A540-5895EDE0032B}.Debug|x86.ActiveCfg = Debug|x86
+		{9DCD359D-3C6A-4E4D-A540-5895EDE0032B}.Debug|x86.Build.0 = Debug|x86
+		{9DCD359D-3C6A-4E4D-A540-5895EDE0032B}.Release|x86.ActiveCfg = Release|x86
+		{9DCD359D-3C6A-4E4D-A540-5895EDE0032B}.Release|x86.Build.0 = Release|x86
+		{B572C0D1-5E74-4AAF-A49E-E6DF39C681E3}.Debug|x86.ActiveCfg = Debug|x86
+		{B572C0D1-5E74-4AAF-A49E-E6DF39C681E3}.Debug|x86.Build.0 = Debug|x86
+		{B572C0D1-5E74-4AAF-A49E-E6DF39C681E3}.Release|x86.ActiveCfg = Release|x86
+		{B572C0D1-5E74-4AAF-A49E-E6DF39C681E3}.Release|x86.Build.0 = Release|x86
+		{C04C8B21-5B25-4C91-BB06-3E656310CA81}.Debug|x86.ActiveCfg = Debug|x86
+		{C04C8B21-5B25-4C91-BB06-3E656310CA81}.Debug|x86.Build.0 = Debug|x86
+		{C04C8B21-5B25-4C91-BB06-3E656310CA81}.Release|x86.ActiveCfg = Release|x86
+		{C04C8B21-5B25-4C91-BB06-3E656310CA81}.Release|x86.Build.0 = Release|x86
+		{800172C3-0BD0-4E32-A1B2-0EF113E54934}.Debug|x86.ActiveCfg = Debug|x86
+		{800172C3-0BD0-4E32-A1B2-0EF113E54934}.Debug|x86.Build.0 = Debug|x86
+		{800172C3-0BD0-4E32-A1B2-0EF113E54934}.Release|x86.ActiveCfg = Release|x86
+		{800172C3-0BD0-4E32-A1B2-0EF113E54934}.Release|x86.Build.0 = Release|x86
+		{EEDADD43-81A7-48D6-9355-25A0C2C2F791}.Debug|x86.ActiveCfg = Debug|x86
+		{EEDADD43-81A7-48D6-9355-25A0C2C2F791}.Debug|x86.Build.0 = Debug|x86
+		{EEDADD43-81A7-48D6-9355-25A0C2C2F791}.Release|x86.ActiveCfg = Release|x86
+		{EEDADD43-81A7-48D6-9355-25A0C2C2F791}.Release|x86.Build.0 = Release|x86
+		{82C75239-1E57-4048-9D7D-CB4EEB5A791E}.Debug|x86.ActiveCfg = Debug|x86
+		{82C75239-1E57-4048-9D7D-CB4EEB5A791E}.Debug|x86.Build.0 = Debug|x86
+		{82C75239-1E57-4048-9D7D-CB4EEB5A791E}.Release|x86.ActiveCfg = Release|x86
+		{82C75239-1E57-4048-9D7D-CB4EEB5A791E}.Release|x86.Build.0 = Release|x86
+		{162F59BE-A7F0-4C7D-956C-F6786F7F160F}.Debug|x86.ActiveCfg = Debug|x86
+		{162F59BE-A7F0-4C7D-956C-F6786F7F160F}.Debug|x86.Build.0 = Debug|x86
+		{162F59BE-A7F0-4C7D-956C-F6786F7F160F}.Release|x86.ActiveCfg = Release|x86
+		{162F59BE-A7F0-4C7D-956C-F6786F7F160F}.Release|x86.Build.0 = Release|x86
+		{5C800483-86BF-4002-9493-B0E6CCEB73D9}.Debug|x86.ActiveCfg = Debug|x86
+		{5C800483-86BF-4002-9493-B0E6CCEB73D9}.Debug|x86.Build.0 = Debug|x86
+		{5C800483-86BF-4002-9493-B0E6CCEB73D9}.Release|x86.ActiveCfg = Release|x86
+		{5C800483-86BF-4002-9493-B0E6CCEB73D9}.Release|x86.Build.0 = Release|x86
+		{02AC9119-3724-465B-8060-E97A9E89C184}.Debug|x86.ActiveCfg = Debug|x86
+		{02AC9119-3724-465B-8060-E97A9E89C184}.Debug|x86.Build.0 = Debug|x86
+		{02AC9119-3724-465B-8060-E97A9E89C184}.Release|x86.ActiveCfg = Release|x86
+		{02AC9119-3724-465B-8060-E97A9E89C184}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

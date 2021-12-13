@@ -1,0 +1,10 @@
+﻿<ui:ElysiumApplication x:Class="Octo.Rnd.GateControl.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Octo.Rnd.GateControl"
+              xmlns:ui="http://schemas.extra.com/ui"
+             StartupUri="MainWindow.xaml">
+    <ui:ElysiumApplication.Resources>
+         
+    </ui:ElysiumApplication.Resources>
+</ui:ElysiumApplication>

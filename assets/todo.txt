@@ -1,0 +1,139 @@
+---------INFO------
+Elysium - http://rehansaeed.com/wpf-metro-part4-elysium-extra/
+
+-------IMPROVEMENT------
+I01 - log filtering
+I02 - setting to save: selected group, previous bill?, windows view
+
+-------TASKS--------
+
+
+
+------BUGS----------
+B01 - Can text in text box on overlayed windows appear
+
+
+
+
+todo: initial async UI
+todo: population on group select async
+todo: dbModel for MI base
+todo: bill clear, bill proceed
+todo:   <SolidColorBrush x:Key="SeparationBorder" Color="#999999" /> in theme
+todo: settings window - contains with what?
+todo: log window
+todo: elysium to project from ext lib
+todo: common project IvTx.MI.Device & IvTx.MI.DataBase & IvTx.Core to common repository
+todo: libs to work (Guard - Divice manager)
+todo: tolerance to entrance time (15 min def)
+
+todo: UI on select bill item set width and change buttons
+
+todo: UI increase buttons style
+
+todo: highlight access time
+
+todo: on payment window show current bill info
+
+todo for start: states: SecurutyAccess Card, Bill population. Print and db changes - clear
+
+todo: gate control show notifications in settings (what kind on notifications? outlook style or baloons)
+
+todo: change рукожопые settings to AppConfig user settings ()
+
+todo: Fiscal notfiscal in config
+
+todo: Login/lock screen
+
+todo: UI log population (+show log)
+
+todo: on ZReport needed
+
+todo: tag replacing mechanizm
+
+todo: log every step
+
+todo: increase on hold button
+
+todo: fiscal only for cash
+
+todo: animtion level control
+
+settings:
+группа которая дает право прохода
+партнер/объект/валюта
+время сброса чека
+время блокировки экрана
+
+TZ:
+
+Как было:
+Имеем 2 группы партнеров:
+1-абонементы ... В этой группе нет никаких правил или конфигов, на баланс партнера начисляется 0.10 (стоимость посещения по предоплате = 0.01) Соответственно посетитель имеет 10 посещений.
+
+2-скидка:.... Мы ничего не начисляем этой группе , но их мы переводим на ценовую группу 1 (цена отличная от розничной -скидка 10%) 
+
+По итогу мы имеем, когда подходит человек с абонементом, выбирается партнер у которого есть средства на балансе и он их тратит во время посещения.
+ И если подходит человек со скидочной картой , товары которые выбивает кассир будут иметь цену из первой ценовой группы.
+
+[10:47 PM, 10/31/2016] Витя Админ Осьминожек: Безнал                        
+[10:47 PM, 10/31/2016] Витя Админ Осьминожек: Шаблон                        
+[11:04 PM, 10/31/2016] Витя Админ Осьминожек: Z-отчёт
+
+
+
+todo: test краевые ситуации, нет базы, нет принетра, нет терникета и прочие. Предположить авариынй экран
+
+
+1) Отчет времени- А) начинается во время прохода через турникет 
+ Б) начинается во время продажи билета 
+ В) сделать разные группы с разной политикой: постоянные клиенты (т.е. клиенты которые купили карту прохода) , для них начинается отчет времени во время продажи билета и они имеют право неограниченного прохода через турникет, пока действует время за которое они заплатили. 
+Группы (которые приезжают) - не покупают постоянные карты, для них можно сделать следующее: у групп политика такая, что время прохода начинается после того как они прошли через турникет и имеют разрешение на 1 вход и 1 выход. 
+2) Сделать авторизацию пользователя 
+3)Продажу несколько карты одновременно 
+4)Работа с абонементами и 10% скидочными картами 
+5)Информационное табло
+
+todo: Больше логирования на гейт конролле
+todo: Логировать в базу проходы и входы и считывания
+
+todo: Безнала не фискальный чек
+
+todo: WPFCoreHelper to IvTx core decktop
+
+todo: Close log in error mode
+
+todo 11-14
+-в ошибочном состоянии только закрытие окна
+-разные типы прохода
+-Абонемент: группа партнера: 1 единица - это бещлимит на день?
+-группа карт
+-MinQtty - количество минут при покупке
+-Дисплей на gateControl
+-строку состояния с fade анимацией через продолжительное время
+-Only one good with MinQtty
+
+- нижнее меню как в elysium
+
+
+
+
+Результаты тестирования
+--Добавить партнеру информацию о карте
+++RAW SQL для ускорения принятия решения на GateControl
+--warmup DbCOntext
+--тег для размещения информации о проходе
+--подствеждение выхода
++x отчет
+
+[5:46 PM, 11/20/2016] Витя Админ Осьминожек: Турникет: скорость принятия решения / фикс сбоем с проходом/ 
+
+Касса:информация о перекате в 2 строки                        
+[5:46 PM, 11/20/2016] Витя Админ Осьминожек: Индентификация пользователей
+
+- [4:25 PM, 11/21/2016] Витя Админ Осьминожек: Статус товара: недоступен                        : Или неиспользуется, что то какое - фильтровать по этому полю
+
+- Запомнить размеры экрана
+- Проверять заданные параметры что они существуют в базе
+- Оплата картой в ФН
+- не отбирать фокус окном нотификационным

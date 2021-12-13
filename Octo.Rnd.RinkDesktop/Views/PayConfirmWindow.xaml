@@ -1,0 +1,50 @@
+﻿<extra:OverlayWindow x:Class="Octo.Rnd.RinkDesktop.Views.PayConfirmWindow"
+                     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                     xmlns:en="IvTx.Mi.DataBase.Enums"
+                     xmlns:enums="clr-namespace:IvTx.Mi.DataBase.Enums;assembly=IvTx.Mi.DataBase"
+                     xmlns:extra="http://schemas.extra.com/ui"
+                     xmlns:local="clr-namespace:Octo.Rnd.RinkDesktop.Views"
+                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                     xmlns:params="http://schemas.codeplex.com/elysium/params"
+                     Title="Оплата"
+                     Width="900"
+                     Height="300"
+                     Style="{StaticResource DarkOverlayWindowStyle}"
+                     mc:Ignorable="d">
+    <StackPanel Orientation="Vertical">
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Height="40"
+                    Margin="10"
+                    BorderBrush="Black"
+                    Command="{Binding AcceptCommand}"
+                    Content="Наличными">
+                <Button.CommandParameter>
+                    <enums:PaymentEnum>Cash</enums:PaymentEnum>
+                </Button.CommandParameter>
+            </Button>
+            <Button Height="40"
+                    Margin="10"
+                    BorderBrush="Black"
+                    Command="{Binding AcceptCommand}"
+                    Content="Картой">
+                <Button.CommandParameter>
+                    <enums:PaymentEnum>Card</enums:PaymentEnum>
+                </Button.CommandParameter>
+            </Button>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Height="40"
+                    Margin="10"
+                    BorderBrush="Black"
+                    Command="{Binding CancelCommand}"
+                    Content="Отмена оплаты" />
+            <Button Height="40"
+                    Margin="10"
+                    BorderBrush="Black"
+                    Command="{Binding CancelAndClearCommand}"
+                    Content="Отменить чек" />
+        </StackPanel>
+    </StackPanel>
+</extra:OverlayWindow>
